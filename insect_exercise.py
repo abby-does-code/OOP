@@ -3,14 +3,14 @@ import random
 
 
 class Insects:
-    def __init__(self):
+    def __init__(self, wings, legs):
         self.wings = 2
         self.legs = 4
-        self.flight_length = random.randrange(1, 10)
 
 
-def get_insect_stats(self):
-    return self.wings, self.legs, self.flight_length
+def flight_length(self, flight_length):
+    self.flight_length = random.randrange(1, 10)
+    return self.flight_length
 
 
 my_bug = Insects()
