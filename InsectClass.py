@@ -7,15 +7,15 @@ import random
 class Insects:
     def __init__(self):
         # This is where you define all your attributes.
-        self.__wings = 2
+        self.__wings = 2  # this means the user is going to give you the variables
         self.__legs = 4
-        self.__flight_length = 0
+        self.__flight = 0
 
     # Even though flight length was initialized at 0, you can change it in this
     # function!
-    def __flight_length(self):
-        self.__flight_length = random.randrange(1, 10)
-        return self.__flight_length
+    def flight_length(self):
+        self.__flight = random.randrange(1, 10)
+        return self.__flight
 
     def __str__(self):
         return (
@@ -26,5 +26,5 @@ class Insects:
             + str(self.__legs)
             + "\n"
             + "flight length: "
-            + str(self.__flight_length)
+            + str(self.__flight)
         )
