@@ -4,4 +4,4 @@ fly = i.Insects()
 
 print(type(fly))
 
-print("The insect can fly up to: ", fly.__flight(), "miles!")
+print("The insect can fly up to: ", fly.flight_length(), "miles!")
