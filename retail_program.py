@@ -1,7 +1,12 @@
-import oop_hw as oop
+import retailitem_class as retail
 
-record1 = oop.RetailItem("Susan Meyers", 47899, "Accounting", "Vice President")
+record1 = retail.RetailItem("Susan Meyers", 47899, "Accounting", "Vice President")
 
-record2 = oop.RetailItem("Mark Jones", 39119, "IT", "Programmer")
+record2 = retail.RetailItem("Mark Jones", 39119, "IT", "Programmer")
 
-record3 = oop.RetailItem("Joy Rogers", 81774, "Manufacturing", "Engineering")
+record3 = retail.RetailItem("Joy Rogers", 81774, "Manufacturing", "Engineering")
+
+def get_Name(self):
+     n = str(input("What's the name? "))
+    return n
+
