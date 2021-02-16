@@ -1,4 +1,3 @@
-
 """
 Write a class named Car that has the following data attributes:
     _ _year_model (for the car’s year model)
@@ -19,21 +18,20 @@ The class should also have the following methods:
 
 Next, design a program that creates a Car object then calls the accelerate method five times. After each call to the accelerate method, get the current speed of the car and display it. Then call the brake method five times. After each call to the brake method, get the current speed of the car and display it.
 """
-class Car: 
-    def __init__(self):
-        self.year = y
-        self.model = mo
-        self.make = m
-        self.speed_data = 0
+
+
+class Car:
+    def __init__(self, y, mo, m):
+        self.__year = y
+        self.__model = mo
+        self.__make = m
+        self.__speed_data = 0
 
     def accelerate(self):
-        if accelerate = True:
-            self.speed_data += 5
+        self.speed_data += 5
+
     def brake(self):
-        if brake = True:
-            self.speed_data -= 5
+        self.speed_data -= 5
+
     def get_speed(self):
         print(self.speed_data)
-
-    
-
