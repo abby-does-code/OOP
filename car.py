@@ -27,11 +27,11 @@ class Car:
         self.__make = m
         self.__speed_data = 0
 
-    def accelerate(self):
-        self.speed_data += 5
+    def accelerate(self, speed):
+        self.__speed_data += 5
 
-    def brake(self):
-        self.speed_data -= 5
+    def brake(self, speed):
+        self.__speed_data -= 5
 
     def get_speed(self):
-        print(self.speed_data)
+        print(self.__speed_data)
