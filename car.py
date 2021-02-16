@@ -27,11 +27,16 @@ class Car:
         self.__make = m
         self.__speed_data = 0
 
-    def accelerate(self, speed):
+    def accelerate(self):
         self.__speed_data += 5
+        return self.__speed_data
 
-    def brake(self, speed):
-        self.__speed_data -= 5
+    def brake(self):
+        if self.__speed_data >= 5:
+            self.__speed_data -= 5
+        else:
+            print("You're stopped!")
+        return self.__speed_data
 
     def get_speed(self):
         print(self.__speed_data)
