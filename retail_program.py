@@ -1,12 +1,12 @@
 import retailitem_class as retail
 
-record1 = retail.RetailItem("Susan Meyers", 47899, "Accounting", "Vice President")
 
-record2 = retail.RetailItem("Mark Jones", 39119, "IT", "Programmer")
+item1 = retail.RetailItem("jacket", 12, 59.95)
 
-record3 = retail.RetailItem("Joy Rogers", 81774, "Manufacturing", "Engineering")
+item2 = retail.RetailItem("Designer Jeans", 40, 34.95)
+item3 = retail.RetailItem("Shirt", 20, 24.95)
 
-def get_Name(self):
-     n = str(input("What's the name? "))
-    return n
 
+print(item1.__str__())
+print(item2.__str__())
+print(item3.__str__())
