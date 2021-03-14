@@ -4,7 +4,7 @@ class RetailItem:
         self.__units_in_inventory = inv
         self.__price = price
 
-    def __str__(self):
+    def __str__(self):  #this method displays the object's state
         return (
             "ITEM DESCRIPTION: "
             + str(self.__item_description)
@@ -14,6 +14,6 @@ class RetailItem:
             + "\n"
             + "PRICE: "
             + "$"
-            + str(self.__price)
+            + format(self.__price, '.2f')
             + "\n"
         )
